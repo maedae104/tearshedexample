@@ -14,11 +14,11 @@ def show_homepage():
     return render_template('homepage.html')
 
 
-@app.route('/enter')
-def show_enterpage():
-    """Show the application's enter."""
+# @app.route('/enter')
+# def show_enterpage():
+#     """Show the application's enter."""
 
-    return render_template('main.html')
+#     return render_template('main.html')
 
 @app.route('/gallery')
 def show_gallery():
