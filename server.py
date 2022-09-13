@@ -14,11 +14,6 @@ def show_homepage():
     return render_template('homepage.html')
 
 
-# @app.route('/enter')
-# def show_enterpage():
-#     """Show the application's enter."""
-
-#     return render_template('main.html')
 
 @app.route('/gallery')
 def show_gallery():
@@ -39,6 +34,12 @@ def show_about():
     """Show the application's about."""
 
     return render_template('about.html')
+
+@app.route('/contact')
+def show_contact():
+    """Show the application's contact."""
+
+    return render_template('contact.html')
 
 @app.route('/grief')
 def show_grief():
