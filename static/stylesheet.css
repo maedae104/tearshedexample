@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 body {
-  background-color: rgb(141, 153, 174);
+  background-color: rgb(0, 0, 0);
   color: rgb(237, 242, 244);
 }
 
@@ -37,10 +37,6 @@ video {
   
 }
 
-body {
-  background: #333;
-  color: white;
-}
 
 .video-container:after {
   content: '';
@@ -157,7 +153,7 @@ h1 {
       align-self:flex-start;
     }
 
-img.helix-tear {
+/* img.helix-tear {
   position: relative;
   left: 50%;
   right: 50%;
@@ -172,7 +168,7 @@ div.helix-tear {
   height: 30%;
   width: 40%;
   
-}
+} */
 
 div.tear-description {
   position: absolute;
@@ -183,7 +179,38 @@ div.tear-description {
   top: 40%;
 }
 
+
+img.pic2 {
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  height: -10%;
+  width: 20%;
+  top:40%;
+}
+
+/* div.pic2 {
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  height: 30%;
+  width: 40%;
+  
+} */
+
+div.desc-2 {
+  position: absolute;
+  right: 10%;
+  left: 50%;
+  height: 30%;
+  width: 40%;
+  top: 95%;
+}
+
 .grief-title {
   text-align: center
 }
 
+img {
+  height: 50%;
+}
