@@ -3,13 +3,13 @@ import { Fade } from "react-slideshow-image";
 
 
 function Gallery() {
-    const fadeImages = [
-        "../../public/Oyster.png",
-        "../../public/oysterphoto.jpg",
-        "../../public/Junsebluecrystal.jpg",
-        "../../public/junebluecrystalcanva.jpg"
-
-      ];
+  const fadeImages = [
+    require("../static//Oyster.png"),
+    require("../static//oysterphoto.jpg"),
+    require("../static/Junebluecrystal.jpg"),
+    require("../static/junebluecrystalcanva.jpg")
+  ];
+  
 
   return (
     <div>
