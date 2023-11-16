@@ -1,6 +1,5 @@
 import React from 'react';
 import { Fade } from "react-slideshow-image";
-import "../static/stylesheet.css"
 
 
 function Gallery() {
@@ -17,17 +16,16 @@ function Gallery() {
     <div>
       <h1 className="text-center">Gallery</h1>
       <div className="container">
-        <div className="slide-container" >
-          <Fade>
-            {fadeImages.map((image, index) => (
-              <div className="each-fade" key={index}>
-                <div className="image-container">
-                  <img src={image} alt="slide" />
-                </div>
-                <h2>{`Slide ${index + 1}`}</h2>
-              </div>
-            ))}
-          </Fade>
+        <div className="slide-container" style={{maxWidth: '100%', maxHeight: '100%'}}>
+        <Fade>
+        {fadeImages.map((image, index) => 
+          <div key={index} className="each-fade" style={{ position: 'absolute', zIndex: fadeImages.length - index }}>
+            <div className="image-container">
+              <img src={image} alt="" tyle={{ width: '100%', height: '100%', objectFit: 'cover' }}/>
+            </div>
+          </div>
+        )}
+      </Fade>
         </div>
       </div>
     </div>

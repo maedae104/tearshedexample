@@ -63,11 +63,7 @@ function Enter() {
       <div className="content">
         <h1>The tear shed project.</h1>
         <p>Every tear tells a story</p>
-        {!showGallery ? ( // Render the button if showGallery is false
-          <button id="myBtn" onClick={handleEnterClick}>Enter</button>
-        ) : (
-          <Gallery /> // Render the Gallery component if showGallery is true
-        )}
+        
     
       </div>
     </div>

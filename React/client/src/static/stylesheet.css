@@ -60,11 +60,17 @@ h1 {
   font-size: 5vw;
   font-weight:700;
   @media (max-width: 400px) {
-    font-size: 22px;
+    h1 {
+      font-size: 22px;
+    }
   }
+  
   @media (min-width: 1200px) {
-    font-size: 75px;
+    h1 {
+      font-size: 75px;
+    }
   }
+  
 }
 
 .desc{
