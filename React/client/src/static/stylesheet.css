@@ -171,6 +171,12 @@ h1 {
     .each-fade.active {
       opacity: 1;
     }
+
+    #video {
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+    }
 /* img.helix-tear {
   position: relative;
   left: 50%;

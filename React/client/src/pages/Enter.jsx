@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
-import Gallery from './Gallery';
+import React from 'react';
+import { useHistory } from 'react-router-dom';
+// import Gallery from './Gallery';
 
 function Enter() {
-    const [showGallery, setShowGallery] = useState(false);
-
-    const handleEnterClick = () => {
-      setShowGallery(true);
-    };
+    // const [showGallery, setShowGallery] = useState(false);
+    // const EnterButton = () => {
+    //   const history = useHistory();
+    // const handleEnterClick = () => {
+    //   history.push('/Gallery');
+    //   ;
+    // };
   return (
     <div>
       <style>
@@ -22,7 +25,7 @@ function Enter() {
           }
 
           #myVideo {
-            position: center;
+            
             right: 0;
             bottom: 0;
             min-width: 100%;
@@ -55,19 +58,16 @@ function Enter() {
         `}
       </style>
 
-      <video autoPlay muted loop id="myVideo">
-        <source src="../static/vids/June.Dad.Grief.mov" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
+     
 
       <div className="content">
         <h1>The tear shed project.</h1>
         <p>Every tear tells a story</p>
-        
+        {/* <button onClick={handleEnterClick}>Enter</button> */}
     
       </div>
     </div>
   );
-}
+        }
 
 export default Enter;

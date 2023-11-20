@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "./atoms/navbar"
-import About from "./pages/About"
-import Gallery from "./pages/Gallery"
+// import About from "./pages/About"
+// import Gallery from "./pages/Gallery"
 import Enter from "./pages/Enter";
+import VideoBackground from "./organisms/VideoBackground";
 import "./App.css"
 
 
@@ -11,7 +12,7 @@ function App() {
       <><div>
         <Navbar />
         {/* <About /> */}
-        <Gallery /> 
+        <VideoBackground />
         <Enter />
       </div></>
     )
