@@ -1,7 +1,8 @@
 import React from "react";
-import Navbar from "./atoms/navbar"
+import NavMenu from "./atoms/NavMenu"
 // import About from "./pages/About"
 // import Gallery from "./pages/Gallery"
+// import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Enter from "./pages/Enter";
 import VideoBackground from "./organisms/VideoBackground";
 import "./App.css"
@@ -10,8 +11,10 @@ import "./App.css"
 function App() {
     return (
       <><div>
-        <Navbar />
+        <NavMenu />
         {/* <About /> */}
+        
+  
         <VideoBackground />
         <Enter />
       </div></>
