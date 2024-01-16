@@ -1,7 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavbarBrand } from "reactstrap";
-import {Link } from 'react-router-dom';
-
+import { NavLink } from 'react-router-dom';
 
 function NavMenu() {
   return (
@@ -11,15 +10,14 @@ function NavMenu() {
           display: "block",
           width: 550,
           padding: 30,
-          
         }}
       >
         <Navbar color="light" light expand="md">
           <NavbarBrand href="/">The Tear Shed Project</NavbarBrand>
           <Nav className="mr-auto" navbar>
-            <Link to="/">Home</Link>
-            <Link to="/gallery">Gallery</Link>
-            <Link to="/about">About</Link>
+            <NavLink to="/" activeClassName="active">Home</NavLink>
+            <NavLink to="/gallery" activeClassName="active">Gallery</NavLink>
+            <NavLink to="/about" activeClassName="active">About</NavLink>
           </Nav>
         </Navbar>
       </div>

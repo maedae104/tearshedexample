@@ -11,7 +11,7 @@ function App() {
         <NavMenu />
         {/* <About /> */}
   
-        <VideoBackground />
+        {/* <VideoBackground /> */}
         <Enter />
         
 

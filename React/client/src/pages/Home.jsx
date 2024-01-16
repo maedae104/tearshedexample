@@ -8,7 +8,7 @@ function Home() {
     return (
     <><div>
         <NavMenu />
-        <VideoBackground />
+        {/* <VideoBackground /> */}
         <Enter />
     </div></>
     )

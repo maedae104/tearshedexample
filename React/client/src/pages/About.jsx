@@ -1,8 +1,9 @@
 import React from 'react';
+import NavMenu from '../atoms/NavMenu';
 
 function About() {
   return (
-    <div>
+    <><NavMenu /><div>
       <h1 className="text-center">About</h1>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ maxWidth: '500px' }}>
@@ -11,7 +12,7 @@ function About() {
           </p>
         </div>
       </div>
-    </div>
+    </div></>
   );
 }
 
