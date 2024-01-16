@@ -1,9 +1,9 @@
 import React from "react";
 import { Navbar, NavLink, NavItem, Nav, NavbarBrand } from "reactstrap";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Home from './components/Home'; // Import your components
-import Gallery from './components/Gallery';
-import About from './components/About';
+import Enter from '../pages/Enter';
+import Gallery from '../pages/Gallery';
+import About from '../pages/About';
 
 function NavMenu() {
   return (
@@ -19,9 +19,9 @@ function NavMenu() {
           <NavbarBrand href="/">The Tear Shed Project</NavbarBrand>
 
           <Nav className="mr-auto" navbar>
-            <NavItem><NavLink href="/">Home </NavLink></NavItem>
-            <NavItem><NavLink href="/gallery"> Gallery</NavLink></NavItem>
-            <NavItem><NavLink href="/about"> About</NavLink></NavItem>
+            <NavLink href="/">Home </NavLink>
+            <NavLink href="/gallery"> Gallery</NavLink>
+            <NavLink href="/about"> About</NavLink>
           </Nav>
         </Navbar>
       </div>
