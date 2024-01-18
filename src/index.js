@@ -1,5 +1,5 @@
 const React = require('react');
-const ReactDOM = require('react-dom/client');
+const ReactDOM = require('react-dom');
 const { BrowserRouter: Router } = require('react-router-dom');
 const App = require('./App.jsx');
 const reportWebVitals = require('./reportWebVitals.js');
@@ -7,10 +7,15 @@ const AppRouter = require('./molecules/AppRouter.jsx');
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-      <App />
+  React.createElement(Router, null, 
+    React.createElement(AppRouter, null,
+      React.createElement(App, null)
+    )
+  )
 );
 
 reportWebVitals();
+
 
 
 
