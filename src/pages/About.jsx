@@ -3,8 +3,10 @@ import NavMenu from '../atoms/NavMenu';
 
 function About() {
   return (
-    <><NavMenu /><div>
+    <><div>
+      <NavMenu />
       <h1 className="text-center">About</h1>
+      
       <div style={{ display: 'flex', justifyContent: 'center' }}>
         <div style={{ maxWidth: '500px' }}>
           <p className="text-center">

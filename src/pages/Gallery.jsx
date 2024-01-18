@@ -4,27 +4,28 @@ import { Fade } from "react-slideshow-image";
 
 
 function Gallery() {
-  const fadeImages = [
-    require("../static/Oyster.png"),
-    require("../static/oysterphoto.jpg"),
-    require("../static/Junebluecrystal.jpg"),
-    require("../static/junebluecrystalcanva.jpg")
-  ];
+  // const fadeImages = [
+  //   require("../static/Oyster.png"),
+  //   require("../static/oysterphoto.jpg"),
+  //   require("../static/Junebluecrystal.jpg"),
+  //   require("../static/junebluecrystalcanva.jpg")
+  // ];
   
 
   return (
-    <><NavMenu /><div>
+    <><div>
+      <NavMenu />
       <h1 className="text-center">Gallery</h1>
       <div className="container">
         <div className="slide-container" style={{ maxWidth: '100%', maxHeight: '100%' }}>
-          <Fade>
+          {/* <Fade>
             {fadeImages.map((image, index) => <div key={index} className="each-fade" style={{ position: 'absolute', zIndex: fadeImages.length - index }}>
               <div className="image-container">
                 <img src={image} alt="" tyle={{ width: '100%', height: '100%', objectFit: 'cover' }} />
               </div>
             </div>
             )}
-          </Fade>
+          </Fade> */}
         </div>
       </div>
     </div></>
